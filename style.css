@@ -23,11 +23,11 @@ p {
 
 .app-container {
   position: absolute;
-  top: 40vh;
+  top: 33vh;
   left: 50vw;
   transform: translate(-50%, -50%);
-  width: 250px;
-  height: 420px;
+  width: 20vw;
+  height: 55vw;
   text-align: center;
   border-radius: 5px;
   padding: 20px;
@@ -94,11 +94,12 @@ p {
 /* Mode buttons */
 .btn-pomodoro,
 .btn-break {
-  width: 100px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 90%;
+  width: 15vw;
+  max-width: 180px;
+  margin: 1.5vw;
+  padding: 1.5vw 3vw;
+  border-radius: 0.7vw;
+  font-size: 2vw;
   background: transparent;
   color: #d8e9ef;
   border: 2px solid #d8e9ef;
@@ -115,9 +116,9 @@ p {
 /* Grouping mode buttons */
 .button-group {
   display: flex;
-  gap: 10px;
+  gap: 1vw;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 6vw;
 }
 
 /* Popup To-Do Box */

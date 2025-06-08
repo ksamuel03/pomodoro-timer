@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EG+Garamond:wght@400;500;600;700&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pomodoro App</title>        
+</head>
+<body>
+    <div class="app-container">
+        <h1>pomodoro</h1>
+        <div class="app-message">press start to begin</div>
+        
+        <div class="button-group">                
+            <div class="btn-pomodoro"> Pomodoro</div>
+            <div class="btn-break"> Break</div>
+        </div>
+
+        <div class="app-counter-box">
+            <p>
+                <span class="minutes" contenteditable="true" spellcheck="false">25</span>:<span class="seconds" contenteditable="true" spellcheck="false">00</span>
+            </p>
+        </div>
+        <div class="btn-container">
+            <button class="btn-start">Start</button>
+            <button class="btn-reset" title="Reset">
+                <img src="./images/reset-heart.png" alt="Reset" />
+            </button>
+        </div>
+
+        <div class="popup" id="todo-popup">
+            <div id="todo-header" class="popup-header">to do</div>
+            <ul id="todo-list" class="todo-list"></ul>
+            <div class="todo-input-row">
+                <input id="todo-input" type="text" placeholder="Add new task..." />
+                <button id="todo-add-btn">Add</button>
+            </div>
+        </div>
+    </div>
+<audio id="alarm-sound" src="./sounds/alarm.mp3" preload="auto"></audio>
+<button id="mute-toggle" title="Mute/Unmute Sound" style="position:absolute; bottom:10px; right:10px; background:none; border:none; color:#d8e9ef; cursor:pointer; font-size:1.2rem;">🔊</button>
+<script src="./app.js"></script>
+</body>
+</html>

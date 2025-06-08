@@ -1,0 +1,232 @@
+html {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  min-height: 100vh;
+  color: #d8e9ef;
+  background: url('./images/wallpaper.jpg') center/cover no-repeat fixed;
+}
+
+h1 {
+  margin: 0 auto 10px;
+  color: #d8e9ef;
+}
+
+p {
+  margin: 0;
+}
+
+.app-message {
+  height: 20px;
+  margin: 10px auto 20px;
+}
+
+.app-container {
+  width: 250px;
+  height: 420px;
+  margin: 40px auto;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.app-counter-box {
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 250%;
+  position: relative;
+  top: 100px;
+  color: #d8e9ef;
+}
+
+.app-counter-box p {
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+}
+
+/* Buttons Row */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-start,
+.btn-reset {
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #d8e9ef;
+  cursor: pointer;
+  position: relative;
+  top: 100px;
+}
+
+.btn-start:hover,
+.btn-reset:hover {
+  color: #90c0d1;
+}
+
+/* Reset icon */
+.btn-reset {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.btn-reset img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: transparent;
+}
+
+.btn-reset:hover img {
+  filter: brightness(0.8);
+}
+
+/* Mode buttons */
+.btn-pomodoro,
+.btn-break {
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 90%;
+  background: transparent;
+  color: #d8e9ef;
+  border: 2px solid #d8e9ef;
+  cursor: pointer;
+}
+
+.btn-pomodoro:hover,
+.btn-break:hover {
+  background-color: #d8e9ef;
+  color: #62232c;
+  border-color: #fff;
+}
+
+/* Grouping mode buttons */
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Popup To-Do Box */
+.popup {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  width: 220px;
+  background: transparent;
+  border-radius: 15px;
+  border: 2px solid #d8e9ef;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: #62232c;
+  padding: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  user-select: none;
+  z-index: 1000;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.popup-header {
+  text-transform: lowercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  color: #62232c;
+  cursor: grab;
+}
+
+.todo-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  color: #62232c;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+}
+
+.todo-list li button {
+  background: none;
+  border: none;
+  color: #62232c;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 4px;
+  user-select: none;
+}
+
+.todo-list li button.complete-btn:hover {
+  color: green;
+}
+
+.todo-list li button.delete-btn:hover {
+  color: red;
+  font-weight: bolder;
+}
+
+.todo-input-row {
+  display: flex;
+  gap: 4px;
+  padding: 0 8px 10px;
+  box-sizing: border-box;
+}
+
+#todo-input {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 0 2px 0; 
+  font-size: 0.75rem;
+  border: none;
+  border-bottom: 2px solid #62232c; 
+  background: transparent;
+  color: #62232c;
+  outline: none;
+  caret-color: #62232c;
+}
+
+#todo-input::placeholder {
+  color: #d8e9ef; 
+  font-style: italic;
+}
+
+#todo-add-btn {
+  background: none;
+  border: none;
+  color: #62232c;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  margin-left: 6px;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
